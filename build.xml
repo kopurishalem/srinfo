@@ -2,12 +2,14 @@
 
  <target name="clean">
 	<echo> Java  task </echo>
+	
        <delete dir="build" />
     </target>
  	<!-- -->
 
     <target name="compile" depends="clean">
         <echo> Java Compile task </echo>
+		 <mkdir dir="src" />
          <mkdir dir="build/classes" />
          <javac srcdir="src" destdir="build/classes" />
     </target>
